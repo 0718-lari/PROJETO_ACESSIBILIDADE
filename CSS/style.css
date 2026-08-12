@@ -1,0 +1,120 @@
+/* Configurações Gerais */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7F9;
+    color: #1f2933;
+}
+/* Tela de Login */
+.login-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-card{
+    width: 100%;
+    max-width: 420px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0, 0.08);
+}
+
+/* Logo */
+.logo{
+    text-align: center;
+}
+
+.logo span{
+    font-size: 50px;
+}
+
+.logo h1{
+    font-size: 32px;
+    margin-top: 5px;
+}
+
+.login-subtitle{
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    color: #667085;
+}
+
+/* Formulário */
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d0d5dd;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-group input:focus{
+    border-color: #2563eb;
+}
+
+/* Botão */
+.btn-primary{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary:houver{
+    opacity: 0.9;
+}
+
+/* Cadastro */
+.register-tex{
+    text-align: center;
+    margin-top: 25px;
+    color: #667085;
+}
+
+.register-text a {
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width:480px){
+    .login-card{
+        padding: 30px 20px;
+    }
+
+    .logo span{
+        font-size: 42px;
+    }
+
+    .logo h1{
+        font-size: 28px;
+    }
+}
