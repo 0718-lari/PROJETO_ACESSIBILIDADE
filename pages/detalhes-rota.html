@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detalhes da rota - Acessar</title>
+
+    <link rel="stylesheet" href="/CSS/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==============================
+         CABEÇALHO
+         ============================== -->
+
+    <header class="header">
+
+        <div class="header-logo">
+
+            <nav class="navigation" aria-label="Navegação principal">
+
+                <a href="home.html">
+                    Início
+                </a>
+
+                <a href="rotas.html">
+                    Rotas
+                </a>
+
+                <a href="recursos.html">
+                    Recursos
+                </a>
+
+                <a href="perfil.html">
+                    Perfil
+                </a>
+
+            </nav>
+
+        </div>
+
+
+        <div class="header-actions">
+
+            <!-- Notificações -->
+
+            <button id="notificationButton" class="theme-toggle" aria-label="Notificações" aria-expanded="false"
+                aria-controls="notificationPanel" type="button">
+                🔔
+            </button>
+
+
+            <!-- Tema -->
+
+            <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema" type="button">
+                🌙
+            </button>
+
+
+            <!-- Sair -->
+
+            <button class="logout-button" onclick="fazerLogout()" type="button">
+                Sair
+            </button>
+
+
+            <!-- Painel de notificações -->
+
+            <div id="notificationPanel" class="notification-panel" hidden>
+
+                <h3>
+                    Notificações
+                </h3>
+
+                <div id="notificationList" class="notification-list" aria-live="polite"></div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==============================
+         CONTEÚDO
+         ============================== -->
+
+    <main class="home-container">
+
+        <section class="route-details-section">
+
+            <a href="rotas.html" class="back-route">
+                ← Voltar para rotas
+            </a>
+
+
+            <h1 id="rotaTitulo">
+                Detalhes da rota
+            </h1>
+
+
+            <p class="route-details-subtitle">
+                Confira as informações e os recursos
+                de acessibilidade disponíveis neste caminho.
+            </p>
+
+
+            <!-- ==============================
+                 INFORMAÇÕES PRINCIPAIS
+                 ============================== -->
+
+            <div class="route-details-card">
+
+                <div class="route-details-icon">
+                    🗺️
+                </div>
+
+
+                <div>
+
+                    <h2 id="rotaNome">
+                        Carregando rota...
+                    </h2>
+
+                    <p id="rotaDescricao">
+                        Carregando informações...
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==============================
+                 INFORMAÇÕES DA ROTA
+                 ============================== -->
+
+            <div class="route-details-info">
+
+                <div class="route-detail-item">
+
+                    <span class="route-detail-icon">
+                        📍
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Distância
+                        </strong>
+
+                        <span id="rotaDistancia">
+                            -
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="route-detail-item">
+
+                    <span class="route-detail-icon">
+                        ⏱️
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Tempo estimado
+                        </strong>
+
+                        <span id="rotaTempo">
+                            -
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==============================
+                 CAMINHO
+                 ============================== -->
+
+            <section class="route-path-section">
+
+                <h2>
+                    Caminho da rota
+                </h2>
+
+                <div class="route-map">
+                    <img src="/IMG/rotas.png" alt="Mapa mostrando o caminho da rota acessível">
+                </div>
+
+                <div id="rotaCaminho" class="route-path"></div>
+            </section>
+
+
+            <!-- ==============================
+                 ACESSIBILIDADE
+                 ============================== -->
+
+            <section class="route-accessibility-details">
+
+                <h2>
+                    Recursos de acessibilidade
+                </h2>
+
+                <div id="rotaRecursos" class="accessibility-tags"></div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="/JS/script.js"></script>
+
+    <script>
+        carregarDetalhesRota();
+    </script>
+
+</body>
+
+</html>

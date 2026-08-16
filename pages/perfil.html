@@ -4,69 +4,330 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início - Acessar</title>
+
+    <title>Meu perfil - Acessar</title>
+
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 
 <body>
+
+    <!-- ==============================
+         CABEÇALHO
+         ============================== -->
+
     <header class="header">
 
         <div class="header-logo">
 
-            <nav class="navigation">
-                <a href="home.html">Início</a>
-                <a href="#">Rotas</a>
-                <a href="#">Recursos</a>
-                <a href="perfil.html">Perfil</a>
+            <nav class="navigation" aria-label="Navegação principal">
+
+                <a href="home.html">
+                    Início
+                </a>
+
+                <a href="rotas.html">
+                    Rotas
+                </a>
+
+                <a href="recursos.html">
+                    Recursos
+                </a>
+
+                <a href="perfil.html" aria-current="page">
+                    Perfil
+                </a>
+
             </nav>
 
         </div>
 
+
+        <!-- ==============================
+             AÇÕES DO USUÁRIO
+             ============================== -->
+
         <div class="header-actions">
-            <button id="notificationButton" class="theme-toggle" aria-label="Notificações">
+
+            <!-- Notificações -->
+            <button
+                id="notificationButton"
+                class="theme-toggle"
+                aria-label="Notificações"
+                aria-expanded="false"
+                aria-controls="notificationPanel"
+                type="button">
+
                 🔔
+
             </button>
-    
-            <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">
+
+
+            <!-- Tema -->
+            <button
+                id="themeToggle"
+                class="theme-toggle"
+                aria-label="Alternar tema"
+                type="button">
+
                 🌙
+
             </button>
 
-            <button class="logout-button" onclick="fazerLogout()">Sair</button>
 
-            <div id="notificationPanel" class="notification-panel" hidden>
+            <!-- Sair -->
+            <button
+                class="logout-button"
+                onclick="fazerLogout()"
+                type="button">
+
+                Sair
+
+            </button>
+
+
+            <!-- Painel de notificações -->
+            <div
+                id="notificationPanel"
+                class="notification-panel"
+                hidden>
+
                 <h3>Notificações</h3>
-                <div id="notificationList" class="notification-list"></div>
+
+                <div
+                    id="notificationList"
+                    class="notification-list"
+                    aria-live="polite">
+                </div>
+
             </div>
+
         </div>
 
     </header>
 
+
+    <!-- ==============================
+         CONTEÚDO PRINCIPAL
+         ============================== -->
+
     <main class="home-container">
+
         <section class="profile-section">
-            <h1>Meu perfil</h1>
-            <p>Confira as informações cadastradas na sua conta.</p>
-            <h2 id="perfilNome"></h2>
+
+            <h1>
+                Meu perfil
+            </h1>
+
+            <p>
+                Confira e gerencie as informações cadastradas na sua conta.
+            </p>
+
+
+            <!-- ==============================
+                 NOME DO USUÁRIO
+                 ============================== -->
+
+            <h2 id="perfilNome">
+                Usuário
+            </h2>
+
+
+            <!-- ==============================
+                 DADOS DO PERFIL
+                 ============================== -->
+
             <div class="profile-data">
+
                 <p>
                     <strong>Nome:</strong>
-                    <span id="perfilNomeCompleto"></span>
+
+                    <span id="perfilNomeCompleto">
+                        Não informado
+                    </span>
                 </p>
+
 
                 <p>
                     <strong>E-mail:</strong>
-                    <span id="perfilEmail"></span>
+
+                    <span id="perfilEmail">
+                        Não informado
+                    </span>
                 </p>
+
 
                 <p>
                     <strong>Tipo de deficiência:</strong>
-                    <span id="perfilDeficiencia"></span>
+
+                    <span id="perfilDeficiencia">
+                        Não informado
+                    </span>
                 </p>
+
+            </div>
+
+
+            <!-- ==============================
+                 RESUMO DO PERFIL
+                 ============================== -->
+
+            <div class="profile-summary">
+
+                <h2>
+                    Resumo das informações
+                </h2>
+
+                <p id="perfilResumo">
+                    Suas informações aparecerão aqui.
+                </p>
+
+            </div>
+
+
+            <!-- ==============================
+                 AÇÕES DO PERFIL
+                 ============================== -->
+
+            <div class="profile-actions">
+
+                <button
+                    id="editarPerfilButton"
+                    class="profile-edit-button"
+                    type="button">
+
+                    ✏️ Editar perfil
+
+                </button>
+
+            </div>
+
+
+            <!-- ==============================
+                 FORMULÁRIO DE EDIÇÃO
+                 ============================== -->
+
+            <div
+                id="perfilForm"
+                class="profile-edit-form"
+                hidden>
+
+                <h2>
+                    Editar informações
+                </h2>
+
+
+                <!-- Nome -->
+                <div class="form-group">
+
+                    <label for="editarNome">
+                        Nome completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="editarNome"
+                        placeholder="Digite seu nome">
+
+                </div>
+
+
+                <!-- E-mail -->
+                <div class="form-group">
+
+                    <label for="editarEmail">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="editarEmail"
+                        placeholder="Digite seu e-mail">
+
+                </div>
+
+
+                <!-- Deficiência -->
+                <div class="form-group">
+
+                    <label for="editarDeficiencia">
+                        Tipo de deficiência
+                    </label>
+
+                    <select id="editarDeficiencia">
+
+                        <option value="">
+                            Selecione uma opção
+                        </option>
+
+                        <option value="visual">
+                            Deficiência visual
+                        </option>
+
+                        <option value="auditiva">
+                            Deficiência auditiva
+                        </option>
+
+                        <option value="motora">
+                            Deficiência físico-motora
+                        </option>
+
+                        <option value="intelectual">
+                            Deficiência intelectual
+                        </option>
+
+                        <option value="multipla">
+                            Deficiência múltipla
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Botões -->
+                <div class="profile-form-actions">
+
+                    <button
+                        id="salvarPerfilButton"
+                        class="profile-save-button"
+                        type="button"
+                        hidden>
+
+                        💾 Salvar alterações
+
+                    </button>
+
+
+                    <button
+                        id="cancelarPerfilButton"
+                        class="profile-cancel-button"
+                        type="button"
+                        hidden>
+
+                        ❌ Cancelar
+
+                    </button>
+
+                </div>
+
             </div>
 
         </section>
+
     </main>
+
+
+    <!-- ==============================
+         JAVASCRIPT
+         ============================== -->
+
     <script src="/JS/script.js"></script>
-    <script>carregarPerfil()</script>
+
+    <script>
+        carregarPerfil();
+    </script>
+
 </body>
 
 </html>

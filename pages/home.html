@@ -4,67 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Início - Acessar</title>
+
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 
 <body>
+
+    <!-- Cabeçalho -->
     <header class="header">
 
+        <!-- Navegação principal -->
         <div class="header-logo">
 
-            <nav class="navigation">
-                <a href="home.html">Início</a>
-                <a href="#">Rotas</a>
-                <a href="#">Recursos</a>
-                <a href="perfil.html">Perfil</a>
+            <nav class="navigation" aria-label="Navegação principal">
+
+                <a href="home.html">
+                    Início
+                </a>
+
+                <a href="rotas.html">
+                    Rotas
+                </a>
+
+                <a href="recursos.html">
+                    Recursos
+                </a>
+
+                <a href="perfil.html">
+                    Perfil
+                </a>
+
             </nav>
 
         </div>
 
+
+        <!-- Ações do usuário -->
         <div class="header-actions">
-            <button id="notificationButton" class="theme-toggle" arial-label="Notificações">
+
+            <!-- Notificações -->
+            <button id="notificationButton" class="theme-toggle" aria-label="Notificações" aria-expanded="false"
+                aria-controls="notificationPanel" type="button">
                 🔔
             </button>
-    
-            <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">
+
+
+            <!-- Tema -->
+            <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema" type="button">
                 🌙
             </button>
 
-            <button class="logout-button" onclick="fazerLogout()">Sair</button>
 
+            <!-- Sair -->
+            <button class="logout-button" onclick="fazerLogout()" type="button">
+                Sair
+            </button>
+
+
+            <!-- Painel de notificações -->
             <div id="notificationPanel" class="notification-panel" hidden>
+
                 <h3>Notificações</h3>
-                <div id="notificationList" class="notification-list"></div>
-            </div>  
+
+                <div id="notificationList" class="notification-list" aria-live="polite"></div>
+
+            </div>
+
         </div>
 
     </header>
 
+
+    <!-- Conteúdo principal -->
     <main class="home-container">
+
         <!-- Saudação -->
         <section class="welcome-section">
-            <h1>Olá, <span id="nomeUsuario">usuário</span></h1>
 
-            <p>Encontre recusos de acessibilidade para facilitar sua mobilidade.</p>
+            <h1>
+                Olá, <span id="nomeUsuario">usuário</span>
+            </h1>
+
+            <p>
+                Encontre recursos de acessibilidade para facilitar sua mobilidade.
+            </p>
+
         </section>
+
 
         <!-- Recursos personalizados -->
         <section class="resources-section">
-            <h2>Recursos Personalizados</h2>
+
+            <h2>
+                Recursos personalizados
+            </h2>
 
             <div id="recursosContainer" class="resources-grid"></div>
+
         </section>
 
-        <!-- Informação de acessibilidade -->
+
+        <!-- Informações de acessibilidade -->
         <section class="accessibility-info">
-            <h2>Informações de acessibilidade</h2>
 
-            <p>Consulte informações sobre rotas acessíveis, equipamentos urbanos e consições de mobilidade.</p>
+            <h2>
+                Informações de acessibilidade
+            </h2>
+
+            <p>
+                Consulte informações sobre rotas acessíveis,
+                equipamentos urbanos e condições de mobilidade.
+            </p>
+
         </section>
+
     </main>
+
+
+    <!-- JavaScript -->
     <script src="/JS/script.js"></script>
-    <script>carregarHome()</script>
+
+    <script>
+        carregarHome();
+    </script>
+
 </body>
 
 </html>

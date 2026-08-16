@@ -4,46 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - acessar</title>
+
+    <title>Login - Acessar</title>
+
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 
 <body>
+
     <main class="login-container">
+
         <section class="login-card">
+
+            <!-- Logo -->
             <div class="logo">
+
                 <img src="/IMG/logo.png" alt="Logo do Acessar" class="app-logo">
+
                 <h1>Acessar</h1>
+
             </div>
 
+
+            <!-- Subtítulo -->
             <p class="login-subtitle">
                 Acessibilidade para todos
             </p>
 
+
+            <!-- Formulário de login -->
             <form onsubmit="fazerLogin(event)">
-                <div class="form-group">
-                    <label for="email">E-mail</label>
 
-                    <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                <!-- E-mail -->
+                <div class="form-group">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" autocomplete="email"
+                        required>
+
                 </div>
 
-                <div class="form-group">
-                    <label for="senha">Senha</label>
 
-                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                <!-- Senha -->
+                <div class="form-group">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha"
+                        autocomplete="current-password" required>
+
                 </div>
 
-                <button type="submit" class="btn-primary">Entrar</button>
+
+                <!-- Botão de login -->
+                <button type="submit" class="btn-primary">
+                    Entrar
+                </button>
+
             </form>
 
+
+            <!-- Cadastro -->
             <p class="register-text">
+
                 Ainda não possui uma conta?
-                <a href="cadastro.html">Cadastre-se</a>
+
+                <a href="cadastro.html">
+                    Cadastre-se
+                </a>
+
             </p>
+
         </section>
 
     </main>
+
+
     <script src="/JS/script.js"></script>
+
 </body>
 
 </html>

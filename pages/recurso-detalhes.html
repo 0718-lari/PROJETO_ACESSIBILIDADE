@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Detalhes do recurso - Acessar</title>
+
+    <link
+        rel="stylesheet"
+        href="/CSS/style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- ==============================
+         CABEÇALHO
+         ============================== -->
+
+    <header class="header">
+
+        <div class="header-logo">
+
+            <nav
+                class="navigation"
+                aria-label="Navegação principal"
+            >
+
+                <a href="home.html">
+                    Início
+                </a>
+
+                <a href="rotas.html">
+                    Rotas
+                </a>
+
+                <a href="recursos.html">
+                    Recursos
+                </a>
+
+                <a href="perfil.html">
+                    Perfil
+                </a>
+
+            </nav>
+
+        </div>
+
+
+        <div class="header-actions">
+
+            <button
+                id="notificationButton"
+                class="theme-toggle"
+                aria-label="Notificações"
+                aria-expanded="false"
+                aria-controls="notificationPanel"
+                type="button"
+            >
+                🔔
+            </button>
+
+
+            <button
+                id="themeToggle"
+                class="theme-toggle"
+                aria-label="Alternar tema"
+                type="button"
+            >
+                🌙
+            </button>
+
+
+            <button
+                class="logout-button"
+                onclick="fazerLogout()"
+                type="button"
+            >
+                Sair
+            </button>
+
+
+            <div
+                id="notificationPanel"
+                class="notification-panel"
+                hidden
+            >
+
+                <h3>
+                    Notificações
+                </h3>
+
+                <div
+                    id="notificationList"
+                    class="notification-list"
+                    aria-live="polite"
+                ></div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==============================
+         CONTEÚDO
+         ============================== -->
+
+    <main class="home-container">
+
+        <section class="resource-details-section">
+
+            <a
+                href="recursos.html"
+                class="back-resource"
+            >
+                ← Voltar para recursos
+            </a>
+
+
+            <h1 id="recursoTitulo">
+                Detalhes do recurso
+            </h1>
+
+
+            <p
+                id="recursoDescricao"
+                class="resource-details-subtitle"
+            >
+                Carregando informações...
+            </p>
+
+
+            <!-- IMAGEM -->
+
+            <div class="resource-detail-image">
+
+                <img
+                    id="recursoImagem"
+                    src="/IMG/acessibilidade-fisica.png"
+                    alt="Imagem representando o recurso de acessibilidade"
+                >
+
+            </div>
+
+
+            <!-- INFORMAÇÕES -->
+
+            <div class="resource-detail-card">
+
+                <h2>
+                    Sobre este recurso
+                </h2>
+
+                <p id="recursoDetalhes">
+                    Carregando informações...
+                </p>
+
+            </div>
+
+
+            <!-- BENEFÍCIOS -->
+
+            <div class="resource-detail-card">
+
+                <h2>
+                    Como ele ajuda?
+                </h2>
+
+
+                <div class="resource-benefits">
+
+                    <div class="resource-benefit">
+
+                        <strong>
+                            ♿ Acessibilidade
+                        </strong>
+
+                        <span>
+                            Facilita o acesso e a circulação em diferentes ambientes.
+                        </span>
+
+                    </div>
+
+
+                    <div class="resource-benefit">
+
+                        <strong>
+                            🛡️ Segurança
+                        </strong>
+
+                        <span>
+                            Contribui para um deslocamento mais seguro.
+                        </span>
+
+                    </div>
+
+
+                    <div class="resource-benefit">
+
+                        <strong>
+                            🗺️ Orientação
+                        </strong>
+
+                        <span>
+                            Ajuda o usuário a compreender melhor o ambiente.
+                        </span>
+
+                    </div>
+
+
+                    <div class="resource-benefit">
+
+                        <strong>
+                            🤝 Inclusão
+                        </strong>
+
+                        <span>
+                            Contribui para uma cidade mais acessível e inclusiva.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="/JS/script.js"></script>
+
+    <script>
+        carregarDetalhesRecurso();
+    </script>
+
+</body>
+
+</html>
