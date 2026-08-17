@@ -1060,51 +1060,51 @@ function definirImagemLocal(titulo) {
     const imagens = {
 
         "Pisos táteis":
-            "/IMG/pisos-tateis.png",
+            "../IMG/pisos-tateis.png",
 
         "Semáforos sonoros":
-            "/IMG/semaforos-sonoros.png",
+            "../IMG/semaforos-sonoros.png",
 
         "Rotas acessíveis":
-            "/IMG/rotas-acessiveis.png",
+            "../IMG/rotas-acessiveis.png",
 
         "Semáforos visuais":
-            "/IMG/semaforos-visuais.png",
+            "../IMG/semaforos-visuais.png",
 
         "Alertas visuais":
-            "/IMG/alertas-visuais.png",
+            "../IMG/alertas-visuais.png",
 
         "Rampas acessíveis":
-            "/IMG/rampas-acessiveis.png",
+            "../IMG/rampas-acessiveis.png",
 
         "Elevadores":
-            "/IMG/elevadores.png",
+            "../IMG/elevadores.png",
 
         "Rotas sem barreiras":
-            "/IMG/rotas-sem-barreiras.png",
+            "../IMG/rotas-sem-barreiras.png",
 
         "Rotas simplificadas":
-            "/IMG/rotas-simplificadas.png",
+            "../IMG/rotas-simplificadas.png",
 
         "Pontos de referência":
-            "/IMG/pontos-referencia.png",
+            "../IMG/pontos-referencia.png",
 
         "Orientações":
-            "/IMG/orientacoes.png",
+            "../IMG/orientacoes.png",
 
         "Acessibilidade física":
-            "/IMG/acessibilidade-fisica.png",
+            "../IMG/acessibilidade-fisica.png",
 
         "Sinalização acessível":
-            "/IMG/sinalizacao-acessivel.png",
+            "../IMG/sinalizacao-acessivel.png",
 
         "Painéis informativos":
-            "/IMG/alertas-visuais.png"
+            "../IMG/alertas-visuais.png"
 
     };
 
     return imagens[titulo] ||
-        "/IMG/acessibilidade-fisica.png";
+        "../IMG/acessibilidade-fisica.png";
 }
 
 
@@ -2726,7 +2726,7 @@ function carregarDetalhesRecurso() {
                 "Os pisos táteis possuem diferentes padrões que ajudam na orientação e na identificação de obstáculos e mudanças de direção.",
 
             imagem:
-                "/IMG/pisos-tateis.png"
+                "../IMG/pisos-tateis.png"
 
         },
 
@@ -2739,7 +2739,7 @@ function carregarDetalhesRecurso() {
                 "Os sinais sonoros permitem que pessoas com deficiência visual identifiquem o momento adequado para atravessar uma via.",
 
             imagem:
-                "/IMG/semaforos-sonoros.png"
+                "../IMG/semaforos-sonoros.png"
 
         },
 
@@ -2752,7 +2752,7 @@ function carregarDetalhesRecurso() {
                 "As rampas acessíveis permitem que pessoas com mobilidade reduzida tenham mais facilidade para acessar calçadas, prédios e outros espaços.",
 
             imagem:
-                "/IMG/rampas-acessiveis.png"
+                "../IMG/rampas-acessiveis.png"
 
         },
 
@@ -2765,7 +2765,7 @@ function carregarDetalhesRecurso() {
                 "Elevadores acessíveis são importantes para garantir que pessoas com mobilidade reduzida possam circular entre diferentes andares.",
 
             imagem:
-                "/IMG/elevadores.png"
+                "../IMG/elevadores.png"
 
         },
 
@@ -2778,7 +2778,7 @@ function carregarDetalhesRecurso() {
                 "A sinalização visual permite que informações importantes sejam percebidas sem depender exclusivamente de sinais sonoros.",
 
             imagem:
-                "/IMG/semaforos-visuais.png"
+                "../IMG/semaforos-visuais.png"
 
         },
 
@@ -2791,7 +2791,7 @@ function carregarDetalhesRecurso() {
                 "Alertas visuais ajudam a transmitir informações importantes para pessoas que não conseguem perceber sinais sonoros.",
 
             imagem:
-                "/IMG/alertas-visuais.png"
+                "../IMG/alertas-visuais.png"
 
         },
 
@@ -2804,7 +2804,7 @@ function carregarDetalhesRecurso() {
                 "Essas rotas priorizam caminhos com menos barreiras, como escadas, obstáculos e calçadas inadequadas.",
 
             imagem:
-                "/IMG/rotas-sem-barreiras.png"
+                "../IMG/rotas-sem-barreiras.png"
 
         },
 
@@ -2817,7 +2817,7 @@ function carregarDetalhesRecurso() {
                 "As rotas simplificadas facilitam a compreensão do caminho, apresentando informações de maneira clara.",
 
             imagem:
-                "/IMG/rotas-simplificadas.png"
+                "../IMG/rotas-simplificadas.png"
 
         },
 
@@ -2830,7 +2830,7 @@ function carregarDetalhesRecurso() {
                 "Pontos de referência ajudam o usuário a reconhecer lugares importantes durante o trajeto.",
 
             imagem:
-                "/IMG/pontos-referencia.png"
+                "../IMG/pontos-referencia.png"
 
         },
 
@@ -2843,7 +2843,7 @@ function carregarDetalhesRecurso() {
                 "As orientações apresentam informações importantes de maneira objetiva para facilitar a locomoção.",
 
             imagem:
-                "/IMG/orientacoes.png"
+                "../IMG/orientacoes.png"
 
         },
 
@@ -2856,7 +2856,7 @@ function carregarDetalhesRecurso() {
                 "Inclui estruturas como rampas, elevadores e outros recursos que facilitam o acesso aos espaços.",
 
             imagem:
-                "/IMG/acessibilidade-fisica.png"
+                "../IMG/acessibilidade-fisica.png"
 
         },
 
@@ -2869,7 +2869,7 @@ function carregarDetalhesRecurso() {
                 "A sinalização acessível pode utilizar recursos visuais, sonoros e táteis para facilitar a orientação.",
 
             imagem:
-                "/IMG/sinalizacao-acessivel.png"
+                "../IMG/sinalizacao-acessivel.png"
 
         },
 
@@ -2882,7 +2882,7 @@ function carregarDetalhesRecurso() {
                 "Painéis informativos ajudam os usuários a encontrar orientações, avisos e informações sobre os ambientes.",
 
             imagem:
-                "/IMG/alertas-visuais.png"
+                "../IMG/alertas-visuais.png"
 
         },
 
@@ -2895,7 +2895,7 @@ function carregarDetalhesRecurso() {
                 "As rotas acessíveis priorizam caminhos que possuem recursos adequados às necessidades de diferentes usuários.",
 
             imagem:
-                "/IMG/rotas-acessiveis.png"
+                "../IMG/rotas-acessiveis.png"
 
         }
 
