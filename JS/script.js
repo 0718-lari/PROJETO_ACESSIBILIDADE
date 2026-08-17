@@ -3001,28 +3001,110 @@ document.addEventListener(
     function () {
 
         configurarTema();
-
         configurarNotificacoes();
-
         carregarNotificacoes();
 
-        /*
-         * Cada função verifica se os elementos
-         * necessários existem na página.
-         * Por isso podemos chamar todas aqui.
-         */
 
-        carregarHome();
+        // Nome do arquivo atual
+        const pagina =
+            window.location.pathname
+                .split("/")
+                .pop();
 
-        carregarRotas();
 
-        carregarDetalhesRota();
+        // ==============================
+        // LOGIN
+        // ==============================
 
-        carregarPerfil();
+        if (pagina === "login.html") {
 
-        carregarRecursosPagina();
+            // O formulário já chama
+            // fazerLogin(event)
+            // diretamente pelo HTML.
 
-        carregarDetalhesRecurso();
+        }
+
+
+        // ==============================
+        // CADASTRO
+        // ==============================
+
+        if (pagina === "cadastro.html") {
+
+            // O formulário já chama
+            // cadastrarUsuario(event)
+            // diretamente pelo HTML.
+
+        }
+
+
+        // ==============================
+        // HOME
+        // ==============================
+
+        if (
+            pagina === "home.html" ||
+            pagina === ""
+        ) {
+
+            carregarHome();
+
+        }
+
+
+        // ==============================
+        // ROTAS
+        // ==============================
+
+        if (pagina === "rotas.html") {
+
+            carregarRotas();
+
+        }
+
+
+        // ==============================
+        // DETALHES DA ROTA
+        // ==============================
+
+        if (pagina === "detalhes-rota.html") {
+
+            carregarDetalhesRota();
+
+        }
+
+
+        // ==============================
+        // PERFIL
+        // ==============================
+
+        if (pagina === "perfil.html") {
+
+            carregarPerfil();
+
+        }
+
+
+        // ==============================
+        // RECURSOS
+        // ==============================
+
+        if (pagina === "recursos.html") {
+
+            carregarRecursosPagina();
+
+        }
+
+
+        // ==============================
+        // DETALHES DO RECURSO
+        // ==============================
+
+        if (pagina === "recurso-detalhes.html") {
+
+            carregarDetalhesRecurso();
+
+        }
 
     }
 );
